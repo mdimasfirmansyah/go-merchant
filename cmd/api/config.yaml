@@ -1,0 +1,19 @@
+
+app:
+  name: Golang-Merchant
+  port: ":8080"
+  encryption:
+    salt: 10
+    jwt_secret: secret
+
+db:
+  host: localhost
+  port: 5432
+  name: merchant_db
+  user: postgres
+  password: 7144
+  connection_pool:
+    max_idle_connection: 10
+    max_open_connection: 30
+    max_lifetime_connection: 60
+    max_idletime_connection: 60
